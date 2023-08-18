@@ -7,50 +7,29 @@ this should turn the background blue ;) */
   box-sizing: border-box;
 }
 
-html {
-  font-family: 'Roboto', sans-serif;
-
-}
-
-
 body {
+  font-family: 'Nunito';
   background: #b6d7a8;
   color: #003300;
   font-size: 20px;
 }
 
-
-img {
-  max-width: 100%;
-
-}
-
 header {
-  height: 500px;
-  background-image: url(pictures/applepicture.jpg);
+  height: 300px;
+  background-image: url(images/header-apple-sml.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-
-.header-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-
-.imagetext {
+.main-header-text {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 90px;
   color: azure;
 }
 
-
-.main-header {
-  padding-bottom: 40px;
-  font-size: 75px;
+.main-header-text h1 {
+  padding-bottom: 20px;
+  font-size: 60px;
 }
 
 .form-container-parent {
@@ -69,7 +48,6 @@ header {
 span {
   display: block;
   margin-bottom: 30px;
-
 }
 
 .form-area-left {
@@ -80,10 +58,6 @@ span {
   margin-bottom: 30px;
 }
 
-.main-header {
-  font-size: 40px;
-}
-
 .footer {
   background-color: #003300;
   color: white;
@@ -91,17 +65,17 @@ span {
   padding: 10px;
 }
 
-#submit-button {
+.submit-button {
   padding: 10px 20px;
   font-size: 20px;
   color: white;
-  background-color: #595959;
+  background-color: #c4210c;
+  border-radius: 12px;
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
-
 }
 
 /*PHONE SCREEN*/
