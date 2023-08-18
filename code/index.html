@@ -13,74 +13,77 @@
 </head>
 
 <body>
-  <header>
-    <!-- header - image is in CSS as background -->
+  <header class="main-header">
+    <!-- header image is in CSS as background -->
     <div class="main-header-text">
       <h1>Group 1 Apple Store 🍎</h1>
       <p>Hungry? Get the best apples in town</p>
     </div>
   </header>
   <main>
+    <!-- form starts here -->
     <div class="form-container-parent">
-      <form action="https://httpbin.org/post" method="post">
-        <p style="text-align:center" class="all-paragraphs">Order your favourite apples here!</p>
-        <div class="form-area-left">
-          <!--text input for their name-->
-          <label for="full-name">Full name</label>
-          <input type="text" name="full-name" id="full-name" required placeholder="write your name here">
-        </div>
-        <!-- email field -->
-        <div class="form-area-left">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required placeholder="write your email here">
-          </label>
-        </div>
-        <!-- checkbox field -->
-        <p class="all-paragraphs">Choose your apple:</p>
-        <div class="form-area-left">
-          <!--golden delicious-->
-          <span>
-            <label for="goldendelicious">Golden delicious</label>
-            <input type="checkbox" name="checkbox" id="goldendelicious">
-            Quantity:
-            <select name="quantity-apples">
-              <option value="">Please select</option>
-              <option value="1">1 kilogram</option>
-              <option value="2">2 kilogram</option>
-              <option value="surprise">Surprise</option>
-            </select>
-          </span>
-          <!--granny smith-->
-          <span>
-            <label for="grannysmith">Granny smith</label>
-            <input type="checkbox" name="checkbox" id="grannysmith">
-            Quantity:
-            <select name="quantity-apples">
-              <option value="">Please select</option>
-              <option value="1">1 kilogram</option>
-              <option value="2">2 kilgram</option>
-              <option value="surprise">Surprise</option>
-            </select>
-          </span>
-          <!--red ball-->
-          <span>
-            <label for="redball">Red ball</label>
-            <input type="checkbox" name="checkbox" id="redball">
-            Quantity:
-            <select name="quantity-apples">
-              <option value="">Please select</option>
-              <option value="1">1 kilogram</option>
-              <option value="2">2 kilgram</option>
-              <option value="surprise">Surprise</option>
-            </select>
-          </span>
-          <!--submit button-->
-          <p style="text-align:center"><button type="Submit" class="submit-button">Submit</button></p>
-        </div>
-      </form>
-      <div class="form-area-right">
-        <img class="form-area-picture" src="images/singleapple2.jpg" alt="apple-basket" />
+      <div class="form-area-left">
+        <form action="https://httpbin.org/post" method="post">
+          <h2 style="text-align:center" class="order-sentence-text">Order your favourite apples here!</h2>
+          <div class="form-area-left">
+            <!--text input for their name-->
+            <label for="full-name">Full name:</label>
+            <input type="text" name="full-name" id="full-name" required placeholder="write your name here">
+          </div>
+          <!-- email field -->
+          <div class="form-area-left">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="write your email here">
+            </label>
+          </div>
+          <!-- checkbox field -->
+          <!-- <p class="all-paragraphs">Choose your apple:</p> this code puts the text outside the form, need to use a label -->
+          <div class="form-area-left">
+            <label for="apple-checkbox">Choose your apple:</label>
+            <!--golden delicious-->
+            <span>
+              <label for="goldendelicious">Golden delicious</label>
+              <input type="checkbox" name="checkbox" id="goldendelicious">
+              Quantity:
+              <select name="quantity-apples">
+                <option value="">Please select</option>
+                <option value="1">1 kilogram</option>
+                <option value="2">2 kilogram</option>
+                <option value="surprise">Surprise</option>
+              </select>
+            </span>
+            <!--granny smith-->
+            <span>
+              <label for="grannysmith">Granny smith</label>
+              <input type="checkbox" name="checkbox" id="grannysmith">
+              Quantity:
+              <select name="quantity-apples">
+                <option value="">Please select</option>
+                <option value="1">1 kilogram</option>
+                <option value="2">2 kilgram</option>
+                <option value="surprise">Surprise</option>
+              </select>
+            </span>
+            <!--red ball-->
+            <span>
+              <label for="redball">Red ball</label>
+              <input type="checkbox" name="checkbox" id="redball">
+              Quantity:
+              <select name="quantity-apples">
+                <option value="">Please select</option>
+                <option value="1">1 kilogram</option>
+                <option value="2">2 kilgram</option>
+                <option value="surprise">Surprise</option>
+              </select>
+            </span>
+            <!--submit button-->
+            <p style="text-align:center"><button type="Submit" class="submit-button">Submit</button></p>
+          </div>
       </div>
+      </form>
+      <!--right hand grid box for image -->
+      <img class="form-area-right" src="images/singleapple2.jpg" alt="apple-basket" />
     </div>
   </main>
   <!-- footer -->
